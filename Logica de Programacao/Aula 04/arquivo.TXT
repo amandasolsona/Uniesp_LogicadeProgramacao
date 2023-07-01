@@ -1,5 +1,5 @@
-Amanda Solsona
-Cristiane Solsona
-Jhonnatha Solsona
-Andrew Wanderleya
-Joao Marcone
+0 Amanda Solsona
+1 Cristiane Solsona
+0 Jhonnatha Solsona
+1 Andrew Wanderley
+0 Joao Marcone
