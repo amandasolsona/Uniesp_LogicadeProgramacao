@@ -25,3 +25,4 @@ with open('o_principe_maquiavel.txt', 'r', encoding='utf-8') as file_object:
     for linha in linhas:
         contador += 1
 print(f'Número de linhas: {len(linhas)}')
+
