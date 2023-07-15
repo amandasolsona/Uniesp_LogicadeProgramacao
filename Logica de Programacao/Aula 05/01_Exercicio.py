@@ -6,3 +6,5 @@ data = json.loads(json_data)
 print(data["nome"])
 print(data["id"])
 print(data["saldo"])
+
+#Abastecer o JSON através do input do usuário.
