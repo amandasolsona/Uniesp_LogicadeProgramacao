@@ -2,6 +2,6 @@
 
 Especialização em Desenvolvimento Backend 2023.1
 
-Matéria: Lógica de Programação
+Matéria: Introdução a Lógica de Programação
 
 Professor: Messias Batista
