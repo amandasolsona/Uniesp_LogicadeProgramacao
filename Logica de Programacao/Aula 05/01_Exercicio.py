@@ -8,3 +8,4 @@ print(data["id"])
 print(data["saldo"])
 
 #Abastecer o JSON através do input do usuário.
+#Características é igual a atributos;
