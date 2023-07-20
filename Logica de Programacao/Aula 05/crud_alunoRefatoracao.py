@@ -9,6 +9,17 @@ class Aluno:
         self.email = email
 
 
+def verificar_cpf(cpf):
+    if len(cpf) != 11:
+        raise ValueError('O CPF deve ter 11 dígitos')
+
+
+def verificar_email(email):
+    padrao_email = re.compile(r'[^@]+@[^@]+\.[^@]+')
+    if not padrao_email.match(email):
+        raise ValueError('Endereço de e-mail inválido')
+
+
 class Cadastro:
     def __init__(self):
         self.alunos = []
@@ -22,15 +33,6 @@ class Cadastro:
         aluno = Aluno(nome, cpf, email)
         self.alunos.append(aluno)
         return self
-
-    def verificar_cpf(self, cpf):
-        if len(cpf) != 11:
-            raise ValueError('O CPF deve ter 11 dígitos')
-
-    def verificar_email(self, email):
-        padrao_email = re.compile(r'[^@]+@[^@]+\.[^@]+')
-        if not padrao_email.match(email):
-            raise ValueError('Endereço de e-mail inválido')
 
     def salvar_alunos(self):
         with open('alunos.json', 'w') as file_object:
