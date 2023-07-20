@@ -5,12 +5,11 @@ def cadastrar(lista):
 
 
 def listar(lista):
-
     for nome in lista:
         print(f'-> {nome}')
 
-def remover(lista):
 
+def remover(lista):
     nome_remover = input('Digite qual aluno será removido: ')
 
     if nome_remover in lista:
@@ -19,6 +18,7 @@ def remover(lista):
         print('Nome não encontrados!')
 
     return lista
+
 
 def editar(lista):
     nome_editar = input('Digite o nome a ser alterado: ')
@@ -33,11 +33,13 @@ def editar(lista):
 
     return lista
 
+
 def salvar_arquivo(lista):
     with open('nomes_alunos.txt', 'w', encoding='utf-8') as file_object:
         # file_object.writelines(i + '\n' for i in lista) ou
         for i in lista:
             file_object.write((i + '\n'))
+
 
 def ler_arquivo():
     with open('nomes_alunos.txt', 'r', encoding='utf-8') as file_object:
